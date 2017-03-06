@@ -1,0 +1,281 @@
+//	Theme Name:        Skeleto
+//	Theme URI:
+//	Description:       Markup-only theme for Wordpress.
+//	Author:            Zachary Reese
+//	Author URI:        http://zacharyreese.com
+//	Donate link:       http://paypal.me/zreese
+//	Version:           0.1
+//	Text Domain:       skeleto
+
+$font_ss: 'sans-serif'
+$font_m: 'monospace'
+
+$white: #fff
+$black: #000
+$gray: 	#777
+
+html
+  box-sizing: border-box
+  cursor: default
+  font-family: $font_ss
+  line-height: 1.5
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+*, :after, :before
+  box-sizing: inherit
+
+body
+  background-color: $gray
+
+.container
+  box-sizing: border-box
+  max-width: 992px
+  margin: 20px auto
+  padding: 20px
+  color: $black
+  background-color: $white
+
+ol.commentlist
+  padding: 0
+  list-style: none
+  li
+    &.comment
+      padding: 20px
+      border-bottom: 1px dotted $gray
+      div
+        &.vcard
+          cite.fn
+            font-style: normal
+          img.avatar
+            float: right
+            margin: 0 0 20px 20px
+        &.comment-meta
+          margin: 10px 0
+          font-size: 12px
+          a
+            color: $gray
+        &.reply
+          font-size: 12px
+          font-weight: 700
+      ul.children
+        margin: 20px 0 0
+        padding: 0
+        list-style: none
+        li
+          &.depth-2
+            margin: 0
+            border-left: 5px solid #555
+          &.depth-3
+            margin: 0
+            border-left: 5px solid $gray
+          &.depth-4
+            margin: 0
+            border-left: 5px solid #bbb
+    &.even
+      background-color: $white
+    &.odd
+      background-color: #f6f6f6
+    &.parent
+      border-left: 5px solid $gray
+
+label, input
+  display: block
+
+.screen-reader-text
+  position: absolute
+  left: -9999em
+
+*, ::after, ::before
+  background-repeat: no-repeat
+  box-sizing: inherit
+
+\::after, ::before
+  text-decoration: inherit
+  vertical-align: inherit
+
+article, aside, footer, header, nav, section
+  display: block
+
+body
+  margin: 0
+
+h1
+  font-size: 2em
+  margin: .67em 0
+
+figcaption, figure, main
+  display: block
+
+figure
+  margin: 1em 40px
+
+hr
+  box-sizing: content-box
+  height: 0
+  overflow: visible
+
+nav
+  ol, ul
+    list-style: none
+
+pre
+  font-family: $font_m
+  font-size: 1em
+
+a
+  background-color: transparent
+  -webkit-text-decoration-skip: objects
+
+abbr[title]
+  border-bottom: none
+  text-decoration: underline
+  text-decoration: underline dotted
+
+b, strong
+  font-weight: inherit
+  font-weight: bolder
+
+code, kbd, samp
+  font-family: $font_m
+  font-size: 1em
+
+dfn
+  font-style: italic
+
+mark
+  background-color: #ff0
+  color: $black
+
+small
+  font-size: 80%
+
+sub, sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+
+sub
+  bottom: -.25em
+
+sup
+  top: -.5em
+
+\::-moz-selection, ::selection
+  background-color: #b3d4fc
+  color: $black
+  text-shadow: none
+
+audio, canvas, iframe, img, svg, video
+  vertical-align: middle
+
+audio, video
+  display: inline-block
+
+audio:not([controls])
+  display: none
+  height: 0
+
+img
+  border-style: none
+
+svg
+  fill: currentColor
+  &:not(:root)
+    overflow: hidden
+
+table
+  border-collapse: collapse
+
+button, input, optgroup, select, textarea
+  margin: 0
+
+button, input, select, textarea
+  background-color: transparent
+  color: inherit
+  font-size: inherit
+  line-height: inherit
+
+button, input
+  overflow: visible
+
+button, select
+  text-transform: none
+
+button, html [type="button"], [type="reset"], [type="submit"]
+  -webkit-appearance: button
+
+[type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner, button::-moz-focus-inner
+  border-style: none
+  padding: 0
+
+[type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring, button:-moz-focusring
+  outline: 1px dotted ButtonText
+
+legend
+  color: inherit
+  display: table
+  max-width: 100%
+  padding: 0
+  white-space: normal
+
+progress
+  display: inline-block
+  vertical-align: baseline
+
+textarea
+  overflow: auto
+  resize: vertical
+
+[type="checkbox"], [type="radio"]
+  padding: 0
+
+[type="number"]
+  &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+    height: auto
+
+[type="search"]
+  -webkit-appearance: textfield
+  outline-offset: -2px
+  &::-webkit-search-cancel-button, &::-webkit-search-decoration
+    -webkit-appearance: none
+
+::-webkit-file-upload-button
+  -webkit-appearance: button
+  font: inherit
+
+details, menu
+  display: block
+
+summary
+  display: list-item
+
+canvas
+  display: inline-block
+
+template
+  display: none
+
+[tabindex], a, area, button, input, label, select, summary, textarea
+  -ms-touch-action: manipulation
+  touch-action: manipulation
+
+[hidden]
+  display: none
+
+[aria-busy="true"]
+  cursor: progress
+
+[aria-controls]
+  cursor: pointer
+
+[aria-hidden="false"][hidden]
+  clip: rect(0, 0, 0, 0)
+  display: inherit
+  position: absolute
+  &:focus
+    clip: auto
+
+[aria-disabled]
+  cursor: default
