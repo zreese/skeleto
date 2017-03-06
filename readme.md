@@ -1,32 +1,6 @@
 Skeleto Theme
 ===
 
-Theme Name:        Skeleto
-
-Theme URI:		   http://github.com/zreese/skeleto
-
-Description:       Markup-only theme for WordPress.
-
-Author:            Zachary Reese
-
-Author URI:        http://zacharyreese.com
-
-Donate link:       http://paypal.me/zreese
-
-Version:           0.1
-
-Requires at least: ?
-
-License:
-
-Tested up to:      4.7
-
-License:           Unlicense
-
-License URI:       http://unlicense.org
-
-Text Domain:       skeleto
-
 About
 ====
 
